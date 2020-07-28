@@ -11,4 +11,6 @@ class Producto:
 		return self.__primera_necesidad
 
 	def get_precio(self):
-		return self.__precio
+		if primera_necesidad():
+			return self.__precio*self.__primera_necesidad
+			
